@@ -1,0 +1,301 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WUSTL Webfood</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="Webfood2.0.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="welcome"><img src="Assets/Images/welcome_logo.png" ></div>
+<div id="order"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/order.png" width="60%"></a></div>
+<div id="balance"><a href = "javascript:void(0)" onclick = "document.getElementById('balanceframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/balance.png" width="37%"></a></div>
+<a href = "javascript:void(0)" onclick = "document.getElementById('favoriteframe').style.display='block';document.getElementById('fade').style.display='block'"><div id="favorites"><img src="Assets/Images/favorites.png" width="35%"></div></div>
+<div id="history"><a href = "javascript:void(0)" onclick = "document.getElementById('historyframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/history.png" width="30%"></a></div>
+<div id="menus"><a href="http://diningservices.wustl.edu/menuslocationshours/Pages/default.aspx"><img src="Assets/Images/menus.png" width="25%"></a></div>
+
+<div id="mid">
+<img src="Assets/Images/spacer.png" width="5.5%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('balanceframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/balance.png" width="22%" id="card"></a>
+<img src="Assets/Images/spacer.png" width="5%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('favoriteframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/favorites.png" width="17%" id="heart"></a>
+<img src="Assets/Images/spacer.png" width="5%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('historyframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/history.png" width="17%" id="clock">
+<img src="Assets/Images/spacer.png" width="5%" id="space"></a>
+<a href="http://diningservices.wustl.edu/menuslocationshours/Pages/default.aspx"><img src="Assets/Images/menus.png" width="13%" id="fork"></a>
+ </div>
+
+<div id="desk">
+<img src="Assets/Images/spacer.png" width="3%" height="192" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('historyframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/history.png" width="12%" id="clock">
+<img src="Assets/Images/spacer.png" width="3%" id="space"></a>
+<a href="http://diningservices.wustl.edu/menuslocationshours/Pages/default.aspx"><img src="Assets/Images/menus.png" width="10%" id="fork"></a>
+<img src="Assets/Images/spacer.png" width="3%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/order.png" width="25%" id="card"></a>
+<img src="Assets/Images/spacer.png" width="3%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('balanceframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/balance.png" width="16%" id="card"></a>
+<img src="Assets/Images/spacer.png" width="3%" id="space">
+<a href = "javascript:void(0)" onclick = "document.getElementById('favoriteframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/favorites.png" width="11%" id="heart"></a>
+ </div>
+
+<div id="light" class="white_content"> 
+<div id="LF">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23; text-align:center;" ><strong>x</strong></a>
+</div>
+<p>
+<strong>Where do you want to eat?</strong>
+</p>
+<p>
+<input type="radio" name="group1" > DUC<br>
+<input type="radio" name="group1" > Bear's Den<br>
+<input type="radio" name="group1" > Village<br>
+<input type="radio" name="group1" > Holmes Lounge 
+<p>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>next >></strong>
+</a>
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+
+<div id="light1" class="white_content"> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='block' " style="text-decoration: none; color: #E42D23;" > <strong><< back </strong></a>
+<p>
+<strong>Choose an eatery:</strong>
+</p>
+<p>
+<UL type="none">
+<li><input type="radio" name="group1" value="Milk"> WashU Wok<br></li>
+<li><input type="radio" name="group1" value="Butter" > DeliciOSO<br></li>
+<li><input type="radio" name="group1" value="Butter" > Trattoria Verde<br></li>
+<li><input type="radio" name="group1" value="Cheese"> 1853 Diner</li>
+</ul> 
+<p>
+
+<a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>next >> </strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+<div id="light2" class="white_content"> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='block' " style="text-decoration: none; color: #E42D23;" > <strong><< back </strong></a>
+<p>
+<strong>Select your meal:</strong>
+</p>
+<p>
+<input type="radio" name="group1" value="Milk"> Stir-Fry<br>
+<input type="radio" name="group1" value="Butter" > Spring Rolls<br>
+<input type="radio" name="group1" value="Butter" > Crab Rangoon<br>
+<input type="radio" name="group1" value="Cheese"> Fried Rice
+<p>
+
+<a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>next >></strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+<div id="light3" class="white_content"> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='block' " style="text-decoration: none; color: #E42D23;" > <strong><< back </strong></a>
+<p>
+<strong>Stir Fry Options </strong><br>
+<form action="demo_form.asp" method="get">
+Entree:<br>
+  <input type="checkbox" name="vehicle" value="Bike"> Meat<br>
+ <input type="checkbox" name="vehicle" value="Car" > Vegetarian<br>
+<br> Rice:<br>
+<input type="checkbox" name="vehicle" > Jasmine<br>
+  <input type="checkbox" name="vehicle" value="Car" > Fried<br>
+ <br>Side:<br>
+  <input type="checkbox" name="vehicle" value="Bike"> Spring Roll<br>
+<input type="checkbox" name="vehicle" value="Car" > Crab Rangoon<br>
+</form>
+<br>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light4').style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>next >></strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+<div id="light4" class="white_content"> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='block' " style="text-decoration: none; color: #E42D23;" > <strong><< back </strong></a>
+<p>
+Additional Comments or Specifications:<br> <TEXTAREA Name="content" ROWS=5 COLS=20></TEXTAREA><br>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>place order >></strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+<div id="light5" class="white_content"> 
+<p>
+<strong>Your order has been placed! </strong><br>
+Your food will be ready for pickup in 10-15 minutes. <br>
+Thanks for using Webfood! <br>
+<a href = "javascript:void(0)" onclick = "
+document.getElementById('light5').style.display='none';document.getElementById('fade').style.display='none';
+document.getElementById('light4').style.display='none';document.getElementById('fade').style.display='none'; document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'; 
+document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none';
+document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none';
+document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23;">
+<strong> close </strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+
+
+<div id="loginframe" class="white_content"> 
+<div id="LF">
+<a href = "javascript:void(0)" onclick = "document.getElementById('loginframe').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23; text-align:center;"><strong>x</strong></a>
+</div>
+<p>
+WUSTL Key: <input type="text" name="firstname"><br>
+</p>
+<p>
+Password:&nbsp;&nbsp;&nbsp; <input type="password" name="pwd">
+</p>
+
+<p>
+<a href = "javascript:void(0)" onclick = "document.getElementById('loginframe').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23;">
+<strong>Sign In</strong>
+</a>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+<div id="balanceframe" class="white_content"> 
+<a href = "javascript:void(0)" onclick = "document.getElementById('balanceframe').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23; text-align:right;" ><strong>x</strong></a>
+
+<img src="Assets/Images/points.png">
+
+</div>
+<div id="fade" class="black_overlay"></div>
+
+<div id="login"><a href = "javascript:void(0)" onclick = "document.getElementById('loginframe').style.display='block';document.getElementById('fade').style.display='block'"><img src="Assets/Images/login.png" width="20%"></a></div>
+</div>
+
+
+
+
+
+<div id="historyframe" class="white_content"> 
+<div id="LF">
+<a href = "javascript:void(0)" onclick = "document.getElementById('historyframe').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23; text-align:center;"><strong>x</strong></a>
+</div>
+<p>
+<strong>Order History</strong>
+</p>
+<p>
+
+11/28/2012 	Cheeseburger, Fries<br>
+11/27/2012 	Salad<br>
+11/26/2012 	Cheesesteak<br>
+11/16/2012 	Chicken Sandwich<br>
+11/14/2012 	Pizza, cheese<br>
+11/14/2012 	Salad<br>
+11/14/2012 	Pizza, pepperoni<br>
+11/13/2012 	Stir-Fry<br>
+11/12/2012 	Taco Salad<br>
+11/12/2012 	Stanley's<br>
+11/12/2012 	Whispers<br>
+11/11/2012 	Chicken Burrito<br>
+<p>
+
+<a href = "javascript:void(0)" onclick = "document.getElementById('historyframe).style.display='block';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;">
+<strong>older >></strong>
+</a>
+
+</p>
+</p>
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+<div id="favoriteframe" class="white_content"> 
+<div id="LF">
+<a href = "javascript:void(0)" onclick = "document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='none'" style="text-decoration: none; color: #E42D23; text-align:center;"><strong>x</strong></a>
+</div>
+<p>
+<strong>Order History</strong>
+</p>
+<p>
+
+<strong>1. Taco Salad &nbsp;&nbsp;&nbsp;&nbsp;<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;"> >> order this!</a></strong> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Chicken<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Medium Salsa<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Guacamole<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Beans<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Rice<br>
+<strong>2. Stir-Fry &nbsp;&nbsp;&nbsp;&nbsp;<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;"> >> order this!</a></strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Meat<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Fried Rice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Spring Roll<br>
+<strong>3. Cheeseburger &nbsp;&nbsp;&nbsp;&nbsp;<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;"> >> order this!</a></strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cheddar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-LTO<br>
+<strong>4. Pizza &nbsp;&nbsp;&nbsp;&nbsp;<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;"> >> order this!</a></strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Cheese<br>
+<strong>5. Salad &nbsp;&nbsp;&nbsp;&nbsp;<a href = "javascript:void(0)" onclick = "document.getElementById('light5').style.display='block';document.getElementById('favoriteframe').style.display='none';document.getElementById('fade').style.display='block'" style="text-decoration: none; color: #E42D23;"> >> order this!</a></strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Ceasar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Chicken<br>
+
+</p>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+</body>
+</html>
